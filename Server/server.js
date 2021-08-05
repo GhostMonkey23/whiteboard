@@ -10,7 +10,8 @@ io.on('connection', (socket)=> {
         socket.broadcast.emit('canvas-data', data);
     })
 })
-var server_port = process.env.YOUR_PORT || process.env.PORT || 6000;
+var server_port =  process.env.YOUR_PORT || process.env.PORT || 5000;
+
 http.listen(server_port, () => {
     console.log("Started on : "+ server_port);
 })
